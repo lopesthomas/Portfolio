@@ -1,7 +1,7 @@
-function Slider() {
+function Techno() {
     return (
       <div></div>
     );
   }
   
-  export default Slider;
+  export default Techno;
