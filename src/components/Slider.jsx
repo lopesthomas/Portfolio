@@ -19,7 +19,7 @@ function Slider ({ items }) {
 
     const nextSlide = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
-        if(currentIndex == items.length - 1){
+        if(currentIndex === items.length - 1){
             setCurrentPos(392);
             setCurrentIndex(1)
         }else{
@@ -33,7 +33,7 @@ function Slider ({ items }) {
         setCurrentIndex((prevIndex) =>
         prevIndex === 0 ? items.length - 1 : prevIndex - 1
         );
-        if(currentIndex == 0){
+        if(currentIndex === 0){
             setCurrentPos(-784);
         }else{
             setCurrentPos(currentPos + 392);
