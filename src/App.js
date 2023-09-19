@@ -7,6 +7,12 @@ import Techno from './components/Techno';
 import Propos from './components/Propos';
 import Contact from './components/Contact';
 
+import mvg from './assets/images/mon-vieux-grimoire1.png'
+import nc from './assets/images/nina-carducci.png'
+import sb from './assets/images/sophie-bluel.png'
+import booki from './assets/images/booki.png'
+import kasa from './assets/images/kasa.png'
+
 
 function App() {
 
