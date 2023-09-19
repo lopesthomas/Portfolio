@@ -1,3 +1,4 @@
+import '../assets/styles/Banner.css'
 
 function Banner() {
     return (
