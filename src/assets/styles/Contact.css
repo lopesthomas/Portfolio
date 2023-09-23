@@ -100,6 +100,50 @@ textarea {
     padding: 12px;
 }
 
+.check-conditions{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    background: white;
+}
+
+.btn-envoyer{
+    width: inherit;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#checkbox{
+    margin: 0;
+}
+
+.check-conditions p {
+    font-size: 15px;
+}
+
+.modale-conditions{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgb(0 0 0 / 43%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .pure-modal-backdrop h3{
+    font-size: 15px;
+}
+
+.contact .pure-modal-backdrop li{
+    font-size: 15px;
+}
 
 
 @media (max-width: 1300px){

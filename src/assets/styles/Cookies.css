@@ -11,8 +11,6 @@
     
 }
 
-
-
 .box-cookies{
     background: lightgray;
     border-radius: 25px;
@@ -25,3 +23,18 @@
     height: initial;
     border: 2px solid black;
 }
+
+
+
+@media (min-width: 2000px)
+{.bck-cookies {
+    /* margin-right: 30%; */
+    margin-left: -10%;
+}}
+
+@media (min-width: 2850px)
+{.bck-cookies {
+    /* margin-right: 30%; */
+    margin-left: -30%;
+}}
+

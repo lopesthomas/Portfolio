@@ -37,6 +37,11 @@
   }
 }
 
+h2{
+  font-size: 28px;
+  margin-bottom: 55px;
+}
+
 
 @media (min-width: 2000px){
   body {

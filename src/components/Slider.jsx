@@ -99,7 +99,7 @@ function Slider ({ items }) {
             </PureModal>
 
 
-            <h2>Projets realisés{currentIndex}</h2>
+            <h2>Projets realisés</h2>
             <div className="slider-content">
                 <button className="prev-button" onClick={prevSlide}></button>
                 
