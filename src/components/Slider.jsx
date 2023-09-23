@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PureModal from 'react-pure-modal';
 import '../assets/styles/Modal.css'
 import "../assets/styles/Slider.css"
@@ -10,18 +10,34 @@ import "../assets/styles/Slider.css"
 function Slider ({ items }) {
 
     const [modal, setModal] = useState(false);
-    const [currentIndex, setCurrentIndex] = useState(1);
+    const [currentIndex, setCurrentIndex] = useState(parseInt(items.length / 2));
 
     const itemx2 = items
-    const [currentPos, setCurrentPos] = useState(392);
+    
+    const [currentPos, setCurrentPos] = useState(0);
+
+    function oddOrEven(){
+        if(items.length % 2 == 0){
+            setCurrentPos(-196)
+            console.log("pair")
+        }
+
+
+    };
+
+    useEffect(
+        oddOrEven,
+        []
+    )
+    
 
     const [selectedItem, setSelectedItem] = useState("");
 
     const nextSlide = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
         if(currentIndex === items.length - 1){
-            setCurrentPos(392);
-            setCurrentIndex(1)
+            setCurrentPos(((items.length - 1) / 2) * 392 );
+            setCurrentIndex(0)
         }else{
             setCurrentPos(currentPos - 392);
         };
@@ -34,7 +50,7 @@ function Slider ({ items }) {
         prevIndex === 0 ? items.length - 1 : prevIndex - 1
         );
         if(currentIndex === 0){
-            setCurrentPos(-784);
+            setCurrentPos(((items.length - 1) / 2) * -392 );
         }else{
             setCurrentPos(currentPos + 392);
         };
@@ -83,7 +99,7 @@ function Slider ({ items }) {
             </PureModal>
 
 
-            <h2>Projets realisés</h2>
+            <h2>Projets realisés{currentIndex}</h2>
             <div className="slider-content">
                 <button className="prev-button" onClick={prevSlide}></button>
                 

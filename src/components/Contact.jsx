@@ -5,7 +5,7 @@ function Contact() {
         <section className="contact">
             <div className="box">
                 <h2 id="contacter">Contact</h2>
-                <form action="mailto:emailid@example.com" method="post" encType="text/plain">
+                <form action="mailto:thomaslopes001@gmail.com" method="post" encType="text/plain">
                     <label value="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="Entrer votre email (ex: jean@gmail.com)" />
                     <label value="message">Message</label>

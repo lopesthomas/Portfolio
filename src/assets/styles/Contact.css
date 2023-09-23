@@ -19,14 +19,16 @@
     background: linear-gradient(132deg, #53242a, #5d5c5f, #212335);
     background-size: 300% 300%;
     animation: Gradient 8s ease infinite;
-    position: absolute;
-    min-height: 100vh;
+    /* position: absolute; */
+    /* min-height: 100vh; */
     width: 100%;
     overflow: hidden;
     padding:0;
     margin:0px;
     height: 100%;
     font-size: 42px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 @keyframes Gradient {
