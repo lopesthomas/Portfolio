@@ -109,6 +109,7 @@ textarea {
     margin-bottom: 25px;
     border-radius: 6px;
     background: white;
+    padding: 15px;
 }
 
 .btn-envoyer{
