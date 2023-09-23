@@ -144,6 +144,10 @@ textarea {
 
 .contact .pure-modal-backdrop li{
     font-size: 15px;
+    
+}
+li{
+    padding-left: 15px;
 }
 
 

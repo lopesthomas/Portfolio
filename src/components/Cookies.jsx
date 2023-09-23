@@ -9,7 +9,7 @@ function Cookies() {
     return (<>
         { validCookies ? ( <div className="bck-cookies" >
             <div className="box-cookies">
-                <p>Se site web est susceptible d'avoir des cookies. Pour poursuivre veuillez sélectionner "Accepter les cookies".</p>
+                <p>Ce site web est susceptible d'avoir des cookies. Pour poursuivre veuillez sélectionner "Accepter les cookies".</p>
                 <button onClick={desactiveCookies}>Accepter les cookies</button>
             </div>
         </div> ) : ""}
