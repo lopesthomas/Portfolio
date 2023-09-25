@@ -31,8 +31,9 @@ function App() {
   return (
     <div className="App">
       <Cookies/>
-      <Header />
       <Banner />
+      <Header />
+      
       <Slider items={items} />
       <Techno/>
       <Propos/>

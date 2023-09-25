@@ -1,5 +1,6 @@
 import '../assets/styles/Header.css'
 import video from '../assets/pexels1.mp4'
+import imageGitHub from "../assets/images/icones/GitHub.png"
 
 function Header() {
     return (
@@ -16,7 +17,7 @@ function Header() {
                     </div>
                     <div className="btn-github">
                         <a className="btn" href="https://github.com/lopesthomas" target="_blank">Github
-                            <img srcSet="https://img.icons8.com/?size=2x&amp;id=AZOZNnY73haj&amp;format=png 2x, https://img.icons8.com/?size=1x&amp;id=AZOZNnY73haj&amp;format=png 1x" src="https://img.icons8.com/?size=2x&amp;id=AZOZNnY73haj&amp;format=png 2x" alt="GitHub icon" width="48" height="48"/>
+                            <img src={imageGitHub} alt="GitHub icon" width="48" height="48"/>
                         </a>
                     </div>
                     

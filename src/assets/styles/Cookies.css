@@ -18,6 +18,13 @@
 
 }
 
+.cookies-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+
 .box-cookies button {
     margin: 0;
     height: initial;
